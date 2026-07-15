@@ -351,29 +351,50 @@
                         </p>
                     </div>
 
-                   <!-- Replace the action URL with your exact Formspree URL -->
-<form action="https://formspree.io/f/mjgngbny" method="POST" class="space-y-4">
-  
-  <div>
-    <label for="name" class="block text-sm font-medium">Your Name</label>
-    <input type="text" id="name" name="name" required class="w-full p-2 border rounded">
-  </div>
+                    <form action="https://formspree.io/f/mjgngbny" method="post" id="project-form" onsubmit="submitProjectProposal(event)" class="p-6 pt-4 space-y-4">
+                        <!-- Input: Name (Enforces no numbers, validation red outline only when incorrect user focus is lost) -->
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Full Name</label>
+                            <input 
+                                type="text" 
+                                id="project-name" 
+                                required 
+                                pattern="^[A-Za-z\s]+$"
+                                title="Please enter a valid name using only letters and spaces (no numbers or special characters)."
+                                placeholder="E.g., Michael Scott" 
+                                class="w-full bg-white border border-divider rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-brand [&:not(:placeholder-shown):not(:focus):invalid]:border-red-500 [&:not(:placeholder-shown):not(:focus):invalid]:text-red-600 focus:invalid:border-red-500 focus:invalid:ring-red-500"
+                            >
+                        </div>
+                        
+                        <!-- Input: Email (Validation red outline only when incorrect user focus is lost) -->
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="project-email" 
+                                required 
+                                placeholder="E.g., manager@company.com" 
+                                class="w-full bg-white border border-divider rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-brand [&:not(:placeholder-shown):not(:focus):invalid]:border-red-500 [&:not(:placeholder-shown):not(:focus):invalid]:text-red-600 focus:invalid:border-red-500 focus:invalid:ring-red-500"
+                            >
+                        </div>
 
-  <div>
-    <label for="email" class="block text-sm font-medium">Your Email</label>
-    <input type="email" id="email" name="_replyto" required class="w-full p-2 border rounded">
-  </div>
+                        <!-- Input: Message -->
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Project Proposal / Message</label>
+                            <textarea 
+                                id="project-message" 
+                                required 
+                                rows="4" 
+                                placeholder="Describe the project goal, stack, and scope..." 
+                                class="w-full bg-white border border-divider rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-brand resize-none"
+                            ></textarea>
+                        </div>
 
-  <div>
-    <label for="message" class="block text-sm font-medium">Message</label>
-    <textarea id="message" name="message" rows="4" required class="w-full p-2 border rounded"></textarea>
-  </div>
-
-  <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-    Send Message
-  </button>
-  
-</form>
+                        <!-- Submit Button -->
+                        <button type="submit" class="w-full bg-brand hover:bg-brand-hover text-white py-2.5 rounded-lg text-sm font-bold transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
 
                     <!-- Feedback Banner -->
                     <div id="form-success-banner" class="hidden mx-6 mb-6 p-3 bg-emerald-50 border border-emerald-200 rounded-lg text-xs text-emerald-800 flex items-center gap-2">
