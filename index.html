@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yohannes12 | Full-Stack Engineer</title>
+    <title>Yohannes | Full-Stack Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for professional tech logos and social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-canvas text-primary font-sans min-h-screen flex flex-col justify-between">
 
     <!-- Header Navigation -->
-    <header class="border-b border-divider bg-white sticky top-0 z-50 py-4 px-6">
+    <header class="border-b border-divider bg-white/90 backdrop-blur sticky top-0 z-50 py-4 px-6">
         <div class="max-w-5xl mx-auto flex justify-between items-center">
-            <span class="text-brand font-bold text-lg tracking-tight">&lt;Yohannes12 /&gt;</span>
+            <span class="text-brand font-bold text-lg tracking-tight">&lt;Yohannes /&gt;</span>
             <nav class="space-x-6 text-sm font-semibold text-secondary">
                 <a href="#about" class="hover:text-brand transition">About</a>
+                <a href="#resume" class="hover:text-brand transition">Resume</a>
                 <a href="#projects" class="hover:text-brand transition">Projects</a>
+                <a href="#certificates" class="hover:text-brand transition">Certificates</a>
                 <a href="#skills" class="hover:text-brand transition">Skills</a>
+                <a href="#sandbox" class="hover:text-brand transition">Interactive Sandbox</a>
                 <a href="#contact" class="hover:text-brand transition">Contact</a>
             </nav>
         </div>
@@ -24,129 +29,436 @@
 
     <main class="max-w-5xl w-full mx-auto p-6 md:p-10 flex-grow space-y-16">
         
-        <!-- Hero Section -->
-        <section id="about" class="grid md:grid-cols-3 gap-8 items-center py-6">
+        <!-- Hero / About Section -->
+        <section id="about" class="grid md:grid-cols-3 gap-8 items-center py-6 scroll-mt-24">
             <div class="md:col-span-2 space-y-5">
-                <span class="text-xs bg-brand-light text-brand px-3 py-1 rounded-full font-bold uppercase tracking-wider">Available for work</span>
+                <span class="text-xs bg-brand-light text-brand px-3 py-1 rounded-full font-bold uppercase tracking-wider">Available for new opportunities</span>
                 <h1 class="text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">
-                    Hi, I'm Yohannes. <br>I build for the web.
+                    Hi, I'm Yohannes. <br>I build full-stack web applications.
                 </h1>
-                <p class="text-secondary text-base md:text-lg leading-relaxed max-w-2xl">
-                    I am a full-stack developer based in Ethiopia. I specialize in crafting robust backend architectures, organizing efficient databases, and implementing fluid user interfaces.
+                <p class="text-secondary text-base md:text-lg leading-relaxed">
+                    I am a recent Computer Science graduate and passionate Full-Stack Web Developer dedicated to designing robust backend systems, managing databases, and writing highly responsive user interfaces. I love solving real-world problems through software engineering.
                 </p>
                 <div class="flex flex-wrap gap-4 pt-2">
                     <a href="#projects" class="bg-brand text-white font-bold px-6 py-3 rounded-lg shadow-md hover:bg-brand-hover transition-all text-sm">
                         View Projects
                     </a>
-                    <a href="#contact" class="bg-white border border-divider text-secondary font-bold px-6 py-3 rounded-lg hover:border-brand hover:text-brand transition-all text-sm">
-                        Get in Touch
+                    <a href="#resume" class="bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-300 font-bold px-6 py-3 rounded-lg shadow-sm transition-all text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-file-pdf text-red-500"></i> View My CV
                     </a>
                 </div>
             </div>
-            <!-- Decorative Visual Core -->
-            <div class="md:col-span-1 hidden md:block">
-                <div class="bg-white border border-divider p-8 rounded-2xl shadow-sm text-center relative overflow-hidden">
-                    <div class="absolute -top-10 -right-10 w-32 h-32 bg-brand-light rounded-full opacity-50 blur-xl"></div>
-                    <p class="text-5xl font-black text-brand mb-2">3+</p>
-                    <p class="text-xs text-secondary font-bold uppercase tracking-wider">Core Frameworks</p>
-                    <div class="border-t border-divider my-4"></div>
-                    <p class="text-sm font-semibold text-slate-800">Clean Code Architect</p>
+            
+            <!-- User Photo Container -->
+            <div class="md:col-span-1 flex justify-center">
+                <div class="relative group">
+                    <div class="absolute -inset-1.5 bg-brand rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
+                    <img src="pic1.jpg" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=300&h=300&q=80'" alt="Yohannes Profile" class="relative w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-white shadow-md">
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Showcase Section -->
+        <section id="resume" class="scroll-mt-24 bg-slate-50 border border-divider rounded-2xl p-6 md:p-8">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-6 border-b border-divider">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+                        <i class="fa-solid fa-file-invoice text-brand"></i> Curricula Vitae / Resume
+                    </h2>
+                    <p class="text-secondary text-sm mt-1">Review my academic background, technical skills, and software project timeline.</p>
+                </div>
+                <!-- Action Button for Resume File Download -->
+                <div>
+                    <a href="Yohannes_Resume.pdf" download="Yohannes_Resume.pdf" class="bg-brand text-white font-bold px-5 py-2.5 rounded-lg shadow-md hover:bg-brand-hover transition-all text-sm flex items-center justify-center gap-2 inline-flex">
+                        <i class="fa-solid fa-cloud-arrow-down"></i> Download Resume (PDF)
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mini Interactive Resume Timeline Summary -->
+            <div class="grid md:grid-cols-2 gap-8 pt-6">
+                <div>
+                    <h3 class="text-sm font-extrabold text-slate-700 uppercase tracking-wider mb-4"><i class="fa-solid fa-graduation-cap text-brand mr-2"></i> Education</h3>
+                    <div class="border-l-2 border-brand/30 pl-4 py-1 space-y-4">
+                        <div>
+                            <div class="flex items-center justify-between text-xs font-bold text-brand">
+                                <span>Bachelor of Science in Computer Science</span>
+                                <span>Class of 2025</span>
+                            </div>
+                            <p class="text-sm font-bold text-slate-900 mt-1">Addis Ababa University (or Your Institution)</p>
+                            <p class="text-xs text-secondary mt-1">Focused on software engineering principles, core data structures, backend database systems, and robust object-oriented patterns.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-extrabold text-slate-700 uppercase tracking-wider mb-4"><i class="fa-solid fa-briefcase text-brand mr-2"></i> Core Competencies</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-medium bg-white border border-divider px-3 py-1.5 rounded-lg text-slate-700 shadow-sm">REST API Engineering</span>
+                        <span class="text-xs font-medium bg-white border border-divider px-3 py-1.5 rounded-lg text-slate-700 shadow-sm">Relational DB Normalization</span>
+                        <span class="text-xs font-medium bg-white border border-divider px-3 py-1.5 rounded-lg text-slate-700 shadow-sm">State Architecture (React)</span>
+                        <span class="text-xs font-medium bg-white border border-divider px-3 py-1.5 rounded-lg text-slate-700 shadow-sm">Client-Server Websockets</span>
+                        <span class="text-xs font-medium bg-white border border-divider px-3 py-1.5 rounded-lg text-slate-700 shadow-sm">Dynamic Responsive UI Design</span>
+                        <span class="text-xs font-medium bg-white border border-divider px-3 py-1.5 rounded-lg text-slate-700 shadow-sm">Asynchronous Execution Flow</span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Projects Layout -->
         <section id="projects" class="scroll-mt-24">
-            <div class="flex items-center justify-between mb-8 border-b border-divider pb-4">
-                <h2 class="text-2xl font-bold text-slate-900">Featured Builds</h2>
-                <span class="text-xs text-secondary font-mono">02 // PROJECTS</span>
+            <div class="mb-8 border-b border-divider pb-4">
+                <h2 class="text-2xl font-bold text-slate-900">Projects Workspace</h2>
             </div>
             
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Project Card 1 -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1: Finished E-Commerce REST API -->
                 <div class="bg-card border border-divider p-6 rounded-2xl shadow-sm hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
                     <div>
-                        <div class="flex gap-2 mb-4">
-                            <span class="badge badge-tech">Node.js</span>
-                            <span class="badge badge-db">PostgreSQL</span>
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex gap-1.5">
+                                <span class="badge bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded">Node.js</span>
+                                <span class="badge bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded">PostgreSQL</span>
+                            </div>
+                            <span class="text-[10px] bg-emerald-100 text-emerald-800 font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider">Completed</span>
                         </div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">E-Commerce Gateway Engine</h3>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">E-Commerce REST API</h3>
                         <p class="text-secondary text-sm leading-relaxed mb-6">
-                            A complete production backend with role-based API controllers, robust security layers, JWT auth sessions, and structured relational tables.
+                            A secure backend system featuring token-based user sessions, robust CRUD routing for product catalogs, and highly optimized database queries.
                         </p>
                     </div>
-                    <a href="#" target="_blank" class="text-brand hover:text-brand-hover hover:underline text-sm font-bold pt-4 border-t border-divider flex items-center gap-1">
-                        View on GitHub <span>&rarr;</span>
-                    </a>
+                    <a href="#" class="text-brand hover:underline text-sm font-bold pt-4 border-t border-divider">View on GitHub &rarr;</a>
                 </div>
 
-                <!-- Project Card 2 -->
+                <!-- Project 2: Finished Restaurant Ordering System -->
                 <div class="bg-card border border-divider p-6 rounded-2xl shadow-sm hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
                     <div>
-                        <div class="flex gap-2 mb-4">
-                            <span class="badge badge-tech">Express</span>
-                            <span class="badge badge-db">Telegram API</span>
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex gap-1.5">
+                                <span class="badge bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded">React</span>
+                                <span class="badge bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded">Express</span>
+                            </div>
+                            <span class="text-[10px] bg-emerald-100 text-emerald-800 font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider">Completed</span>
                         </div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">Business Operations Telegram Bot</h3>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Restaurant Ordering System</h3>
                         <p class="text-secondary text-sm leading-relaxed mb-6">
-                            An automated chatbot platform built using express webhooks, handling database lookups to answer local business requests dynamically.
+                            A full-stack system streamlining table bookings, digital menu ordering, real-time ticket queues for kitchen staff, and customer checkout receipts.
                         </p>
                     </div>
-                    <a href="#" target="_blank" class="text-brand hover:text-brand-hover hover:underline text-sm font-bold pt-4 border-t border-divider flex items-center gap-1">
-                        View on GitHub <span>&rarr;</span>
-                    </a>
+                    <a href="#" class="text-brand hover:underline text-sm font-bold pt-4 border-t border-divider">View on GitHub &rarr;</a>
+                </div>
+
+                <!-- Project 3: Finished Finance Tracker -->
+                <div class="bg-card border border-divider p-6 rounded-2xl shadow-sm hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex gap-1.5">
+                                <span class="badge bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded">JavaScript</span>
+                                <span class="badge bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded">MongoDB</span>
+                            </div>
+                            <span class="text-[10px] bg-emerald-100 text-emerald-800 font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider">Completed</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Finance Tracker</h3>
+                        <p class="text-secondary text-sm leading-relaxed mb-6">
+                            A smart dashboard for monitoring income, budgeting limits, and displaying visual charts to map spending trends dynamically.
+                        </p>
+                    </div>
+                    <a href="#" class="text-brand hover:underline text-sm font-bold pt-4 border-t border-divider">View on GitHub &rarr;</a>
+                </div>
+
+                <!-- Project 4: Finished Real-time Chat System -->
+                <div class="bg-card border border-divider p-6 rounded-2xl shadow-sm hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex gap-1.5">
+                                <span class="badge bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded">Socket.io</span>
+                                <span class="badge bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded">Node.js</span>
+                            </div>
+                            <span class="text-[10px] bg-emerald-100 text-emerald-800 font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider">Completed</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Real-Time Messaging Engine</h3>
+                        <p class="text-secondary text-sm leading-relaxed mb-6">
+                            A persistent websocket chat server processing high-concurrency messages instantly, using in-memory systems to handle fast active session queries.
+                        </p>
+                    </div>
+                    <a href="#" class="text-brand hover:underline text-sm font-bold pt-4 border-t border-divider">View on GitHub &rarr;</a>
+                </div>
+
+                <!-- Project 5: ACTIVE KANBAN BOARD -->
+                <div class="bg-card border border-divider p-6 rounded-2xl shadow-sm hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex gap-1.5">
+                                <span class="badge bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded">React</span>
+                                <span class="badge bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded">Tailwind</span>
+                            </div>
+                            <span class="text-[10px] bg-amber-100 text-amber-800 font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider">In Progress</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Kanban Task Board</h3>
+                        <p class="text-secondary text-sm leading-relaxed mb-6">
+                            Building an interactive workflow tracker focusing on fluid UI transitions, task drag-and-drop mechanics, and keeping state persistent across page reloads.
+                        </p>
+                    </div>
+                    <span class="text-slate-500 text-xs font-semibold pt-4 border-t border-divider italic">Actively writing frontend code</span>
+                </div>
+
+                <!-- Project 6: IN PROGRESS Real Estate Platform -->
+                <div class="bg-card border border-divider p-6 rounded-2xl shadow-sm hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex gap-1.5">
+                                <span class="badge bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded">Next.js</span>
+                                <span class="badge bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded">SQL</span>
+                            </div>
+                            <span class="text-[10px] bg-amber-100 text-amber-800 font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider">In Progress</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Real Estate Platform</h3>
+                        <p class="text-secondary text-sm leading-relaxed mb-6">
+                            Constructing a visual home listing web application with advanced map filters, agent contact channels, and secure user profile portfolios.
+                        </p>
+                    </div>
+                    <span class="text-slate-500 text-xs font-semibold pt-4 border-t border-divider italic">Structuring queries & components</span>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Grid Layout -->
+        <!-- Certificates Showcase Grid -->
+        <section id="certificates" class="scroll-mt-24">
+            <div class="mb-8 border-b border-divider pb-4">
+                <h2 class="text-2xl font-bold text-slate-900">Certificates & Credentials</h2>
+                <p class="text-secondary text-sm mt-1">Credentials earned from verified professional platforms and universities.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Certificate 1: freeCodeCamp Legacy Responsive Web Design V8 -->
+                <div class="bg-card border border-divider rounded-2xl overflow-hidden shadow-sm hover:border-brand transition-all duration-300 flex flex-col">
+                    <div class="aspect-[16/10] bg-[#0a0a23] flex items-center justify-center border-b border-divider relative group overflow-hidden p-6">
+                        <!-- FCC Visual Branding Wrapper -->
+                        <div class="text-center text-white space-y-2">
+                            <i class="fa-brands fa-free-code-camp text-white text-5xl group-hover:scale-110 transition-transform"></i>
+                            <h4 class="font-bold text-sm tracking-wide">freeCodeCamp Certification</h4>
+                            <p class="text-[10px] text-slate-400">Legacy Responsive Web Design</p>
+                        </div>
+                        <img src="freecodecamp.PNG" onerror="this.style.opacity='0'" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300">
+                    </div>
+                    <div class="p-5 space-y-2 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] font-bold text-brand uppercase tracking-wider">freeCodeCamp</span>
+                            <h3 class="text-base font-bold text-slate-900">Legacy Responsive Web Design V8</h3>
+                            <p class="text-secondary text-xs leading-relaxed">Successfully completed a rigorous 300-hour curriculums timeline covering semantic HTML structures, complex responsive CSS techniques, grid/flexbox spacing mechanics, and basic page styling paradigms[cite: 1].</p>
+                        </div>
+                        <div class="pt-4 border-t border-divider flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs font-bold text-slate-700">
+                            <span>Issued: March 8, 2023[cite: 1]</span>
+                            <a href="https://freecodecamp.org/certification/yohanness/responsive-web-design" target="_blank" class="text-brand hover:underline flex items-center gap-1">Verify Credential <i class="fa-solid fa-up-right-from-square text-[10px]"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 2: Udacity Android Developer Fundamentals -->
+                <div class="bg-card border border-divider rounded-2xl overflow-hidden shadow-sm hover:border-brand transition-all duration-300 flex flex-col">
+                    <div class="aspect-[16/10] bg-[#02b3e4] flex items-center justify-center border-b border-divider relative group overflow-hidden p-6">
+                        <!-- Udacity Visual Branding Wrapper -->
+                        <div class="text-center text-white space-y-2">
+                            <i class="fa-solid fa-graduation-cap text-white text-5xl group-hover:scale-110 transition-transform"></i>
+                            <h4 class="font-bold text-sm tracking-wide">Udacity Nanodegree</h4>
+                            <p class="text-[10px] text-sky-100">Android Developer Fundamentals</p>
+                        </div>
+                        <img src="androiddev.PNG" onerror="this.style.opacity='0'" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300">
+                    </div>
+                    <div class="p-5 space-y-2 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] font-bold text-brand uppercase tracking-wider">Udacity (Part of Accenture)</span>
+                            <h3 class="text-base font-bold text-slate-900">Android Developer Fundamentals Nanodegree</h3>
+                            <p class="text-secondary text-xs leading-relaxed">Confirmed validation representing deep application architecture concepts, asynchronous processes, local device database states, and modern UI lifecycle workflows[cite: 2].</p>
+                        </div>
+                        <div class="pt-4 border-t border-divider flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs font-bold text-slate-700">
+                            <span>Issued: May 30, 2026[cite: 2]</span>
+                            <a href="https://www.udacity.com/certificate/e/337d012a-5bf8-11f1-9ae3-47c2f3578394" target="_blank" class="text-brand hover:underline flex items-center gap-1">Verify Credential <i class="fa-solid fa-up-right-from-square text-[10px]"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
         <section id="skills" class="scroll-mt-24">
-            <div class="flex items-center justify-between mb-8 border-b border-divider pb-4">
-                <h2 class="text-2xl font-bold text-slate-900">Technical Stack</h2>
-                <span class="text-xs text-secondary font-mono">03 // SKILLS</span>
+            <div class="mb-8 border-b border-divider pb-4">
+                <h2 class="text-2xl font-bold text-slate-900">Skills & Tools</h2>
             </div>
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                <div class="skill-card">
-                    <span class="text-lg mb-1 block">💻</span>
-                    <h4 class="font-bold text-sm text-slate-900">JavaScript</h4>
-                    <p class="text-xs text-secondary">ES6+ & TS</p>
+            
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Development Stack -->
+                <div class="bg-card border border-divider p-6 rounded-2xl shadow-sm">
+                    <h3 class="font-bold text-base text-slate-900 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-code text-brand"></i> Development Stack
+                    </h3>
+                    <ul class="space-y-2 text-sm text-secondary">
+                        <li class="flex justify-between"><span><i class="fa-brands fa-js text-yellow-500 mr-2"></i>JavaScript</span> <span class="text-brand font-bold">Core</span></li>
+                        <li class="flex justify-between"><span><i class="fa-brands fa-node-js text-emerald-600 mr-2"></i>Node.js</span> <span class="text-brand font-bold">Backend</span></li>
+                        <li class="flex justify-between"><span><i class="fa-solid fa-server text-gray-600 mr-2"></i>Express.js</span> <span class="text-brand font-bold">Routing</span></li>
+                        <li class="flex justify-between"><span><i class="fa-brands fa-react text-sky-500 mr-2"></i>React</span> <span class="text-brand font-bold">Frontend</span></li>
+                        <li class="flex justify-between"><span><i class="fa-solid fa-palette text-cyan-500 mr-2"></i>Tailwind CSS</span> <span class="text-brand font-bold">UI Styling</span></li>
+                    </ul>
                 </div>
-                <div class="skill-card">
-                    <span class="text-lg mb-1 block">🛡️</span>
-                    <h4 class="font-bold text-sm text-slate-900">Node.js</h4>
-                    <p class="text-xs text-secondary">REST APIs</p>
+
+                <!-- Database & Infrastructure -->
+                <div class="bg-card border border-divider p-6 rounded-2xl shadow-sm">
+                    <h3 class="font-bold text-base text-slate-900 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-database text-brand"></i> Data & Control
+                    </h3>
+                    <ul class="space-y-2 text-sm text-secondary">
+                        <li class="flex justify-between"><span><i class="fa-solid fa-table text-blue-600 mr-2"></i>PostgreSQL</span> <span class="text-gray-500 font-medium">Relational</span></li>
+                        <li class="flex justify-between"><span><i class="fa-solid fa-leaf text-green-600 mr-2"></i>MongoDB</span> <span class="text-gray-500 font-medium">NoSQL</span></li>
+                        <li class="flex justify-between"><span><i class="fa-brands fa-git-alt text-orange-600 mr-2"></i>Git & GitHub</span> <span class="text-gray-500 font-medium">Version</span></li>
+                    </ul>
                 </div>
-                <div class="skill-card">
-                    <span class="text-lg mb-1 block">💾</span>
-                    <h4 class="font-bold text-sm text-slate-900">PostgreSQL</h4>
-                    <p class="text-xs text-secondary">SQL Schemas</p>
-                </div>
-                <div class="skill-card">
-                    <span class="text-lg mb-1 block">🌿</span>
-                    <h4 class="font-bold text-sm text-slate-900">MongoDB</h4>
-                    <p class="text-xs text-secondary">NoSQL Admin</p>
+
+                <!-- Professional Workflow -->
+                <div class="bg-card border border-divider p-6 rounded-2xl shadow-sm">
+                    <h3 class="font-bold text-base text-slate-900 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-user-gear text-brand"></i> Professional Workflow
+                    </h3>
+                    <ul class="space-y-2 text-sm text-secondary">
+                        <li class="flex justify-between"><span><i class="fa-solid fa-book text-slate-700 mr-2"></i>Notion</span> <span class="text-gray-500 font-medium">Organization</span></li>
+                        <li class="flex justify-between"><span><i class="fa-solid fa-users text-indigo-600 mr-2"></i>Teamwork</span> <span class="text-gray-500 font-medium">Collaboration</span></li>
+                        <li class="flex justify-between"><span><i class="fa-solid fa-handshake text-teal-600 mr-2"></i>Collaboration</span> <span class="text-gray-500 font-medium">Agile Flow</span></li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Premium Contact Block -->
-        <section id="contact" class="scroll-mt-24 pb-12">
-            <div class="flex items-center justify-between mb-8 border-b border-divider pb-4">
-                <h2 class="text-2xl font-bold text-slate-900">Let's Connect</h2>
-                <span class="text-xs text-secondary font-mono">04 // CONTACT</span>
+        <!-- Practical Skill Demo: Sandbox & Project Form -->
+        <section id="sandbox" class="scroll-mt-24">
+            <div class="mb-8 border-b border-divider pb-4">
+                <h2 class="text-2xl font-bold text-slate-900">Project Workspace & Simulator</h2>
             </div>
-            <div class="bg-card border border-divider p-8 rounded-2xl shadow-sm max-w-xl">
-                <p class="text-secondary text-sm md:text-base leading-relaxed mb-6">
-                    I build reliable software with highly optimized backends. If you are hiring or have a project idea, let's talk.
-                </p>
-                <div class="grid sm:grid-cols-2 gap-4 text-sm">
-                    <div class="border border-divider p-4 rounded-xl hover:border-brand transition-all">
-                        <p class="text-xs text-secondary font-semibold uppercase tracking-wider mb-1">Send an Email</p>
-                        <a href="mailto:yohannes.dev@gmail.com" class="text-brand font-bold hover:underline">yohannes.dev@gmail.com</a>
+            
+            <p class="text-secondary text-sm mb-6 max-w-2xl">
+                Work with me! Managers and clients can submit official project requests on the left. Devs can still interact with the backend console simulator on the right.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Professional Project Message Form (Using CSS :user-invalid for perfect native validation state) -->
+                <div class="bg-card border border-divider rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between">
+                    <div class="bg-slate-50 border-b border-divider px-4 py-3 flex justify-between items-center">
+                        <span class="text-xs font-bold text-slate-700">💼 Project Collaboration Form</span>
+                        <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-bold uppercase">Front-End Form</span>
                     </div>
-                    <div class="border border-divider p-4 rounded-xl hover:border-brand transition-all">
+                    
+                    <div class="px-6 pt-5">
+                        <p class="text-slate-600 text-xs leading-relaxed font-medium">
+                            Have a project in mind or want to discuss an idea? Drop a message — I reply within 24 hours.
+                        </p>
+                    </div>
+
+                    <form id="project-form" onsubmit="submitProjectProposal(event)" class="p-6 pt-4 space-y-4">
+                        <!-- Input: Name (Enforces no numbers, validation red outline only when incorrect user focus is lost) -->
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Full Name</label>
+                            <input 
+                                type="text" 
+                                id="project-name" 
+                                required 
+                                pattern="^[A-Za-z\s]+$"
+                                title="Please enter a valid name using only letters and spaces (no numbers or special characters)."
+                                placeholder="E.g., Michael Scott" 
+                                class="w-full bg-white border border-divider rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-brand [&:not(:placeholder-shown):not(:focus):invalid]:border-red-500 [&:not(:placeholder-shown):not(:focus):invalid]:text-red-600 focus:invalid:border-red-500 focus:invalid:ring-red-500"
+                            >
+                        </div>
+                        
+                        <!-- Input: Email (Validation red outline only when incorrect user focus is lost) -->
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="project-email" 
+                                required 
+                                placeholder="E.g., manager@company.com" 
+                                class="w-full bg-white border border-divider rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-brand [&:not(:placeholder-shown):not(:focus):invalid]:border-red-500 [&:not(:placeholder-shown):not(:focus):invalid]:text-red-600 focus:invalid:border-red-500 focus:invalid:ring-red-500"
+                            >
+                        </div>
+
+                        <!-- Input: Message -->
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Project Proposal / Message</label>
+                            <textarea 
+                                id="project-message" 
+                                required 
+                                rows="4" 
+                                placeholder="Describe the project goal, stack, and scope..." 
+                                class="w-full bg-white border border-divider rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-brand resize-none"
+                            ></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="w-full bg-brand hover:bg-brand-hover text-white py-2.5 rounded-lg text-sm font-bold transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+
+                    <!-- Feedback Banner -->
+                    <div id="form-success-banner" class="hidden mx-6 mb-6 p-3 bg-emerald-50 border border-emerald-200 rounded-lg text-xs text-emerald-800 flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-emerald-500 text-sm"></i>
+                        <span>Frontend simulated! Ready to connect to Express backend.</span>
+                    </div>
+                </div>
+
+                <!-- Simulated Backend Monitor Terminal (Modified to accept form submissions) -->
+                <div class="bg-[#0b0f19] border border-slate-800 rounded-2xl overflow-hidden shadow-sm text-slate-300 font-mono flex flex-col justify-between">
+                    <div>
+                        <div class="bg-[#111827] border-b border-slate-800 px-4 py-3 flex justify-between items-center">
+                            <span class="text-xs font-bold text-emerald-400">⚡ Developer Console (MERN Logger)</span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                        </div>
+                        <div class="p-4 space-y-4 text-xs h-80 overflow-y-auto" id="console-logs">
+                            <div class="text-slate-500">&gt; System active. Submit the Project Collaboration Form to analyze full-stack traffic tracing data live here.</div>
+                        </div>
+                    </div>
+                    <div class="p-3 bg-[#111827] border-t border-slate-800 text-[10px] text-slate-500 flex justify-between">
+                        <span>Local State: Clean</span>
+                        <span id="http-code-indicator">HTTP Code: --</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="scroll-mt-24 pb-12">
+            <div class="mb-8 border-b border-divider pb-4">
+                <h2 class="text-2xl font-bold text-slate-900">Let's Connect Directly</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 max-w-4xl">
+                <!-- Email Contact -->
+                <div class="bg-card border border-divider p-6 rounded-2xl shadow-sm hover:border-brand transition-all flex flex-col items-start gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center text-red-500 text-xl">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-secondary font-semibold uppercase tracking-wider mb-1">Email Me</p>
+                        <a href="mailto:yohannes.dev@gmail.com" class="text-slate-950 font-bold hover:text-brand hover:underline break-all text-sm">yohannes.dev@gmail.com</a>
+                    </div>
+                </div>
+
+                <!-- Telegram Contact -->
+                <div class="bg-card border border-divider p-6 rounded-2xl shadow-sm hover:border-brand transition-all flex flex-col items-start gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-sky-50 flex items-center justify-center text-sky-500 text-xl">
+                        <i class="fa-brands fa-telegram"></i>
+                    </div>
+                    <div>
                         <p class="text-xs text-secondary font-semibold uppercase tracking-wider mb-1">Telegram Direct</p>
-                        <a href="https://t.me/yohannes12_dev" target="_blank" class="text-brand font-bold hover:underline">@yohannes12_dev</a>
+                        <a href="https://t.me/yohannes12_dev" target="_blank" class="text-slate-950 font-bold hover:text-brand hover:underline text-sm">@yohannes12_dev</a>
+                    </div>
+                </div>
+
+                <!-- LinkedIn Contact -->
+                <div class="bg-card border border-divider p-6 rounded-2xl shadow-sm hover:border-brand transition-all flex flex-col items-start gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 text-xl">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-secondary font-semibold uppercase tracking-wider mb-1">LinkedIn Network</p>
+                        <!-- REPLACE WITH YOUR ACTUAL LINKEDIN PROFILE URL IN HREF -->
+                        <a href="https://linkedin.com/in/yohannes-dev" target="_blank" class="text-slate-950 font-bold hover:text-brand hover:underline text-sm">yohannes-dev</a>
                     </div>
                 </div>
             </div>
@@ -158,6 +470,86 @@
     <footer class="border-t border-divider bg-white p-6 text-center text-xs text-secondary">
         <p>&copy; 2026 | Handcrafted by Yohannes</p>
     </footer>
+
+    <!-- Frontend Interactive Logger Engine -->
+    <script>
+        function submitProjectProposal(event) {
+            event.preventDefault();
+
+            // Retrieve Form Fields
+            const name = document.getElementById('project-name').value.trim();
+            const email = document.getElementById('project-email').value.trim();
+            const message = document.getElementById('project-message').value.trim();
+            
+            const consoleLogs = document.getElementById('console-logs');
+            const successBanner = document.getElementById('form-success-banner');
+            const httpCode = document.getElementById('http-code-indicator');
+
+            // 1. Show UI local success feedback
+            successBanner.classList.remove('hidden');
+
+            // 2. Clear previous terminal state and trigger logging flow
+            consoleLogs.innerHTML = `<div class="text-slate-400">[System] Compiling form data into structured payload...</div>`;
+            httpCode.innerText = "HTTP Code: --";
+
+            setTimeout(() => {
+                // Step A: React State
+                consoleLogs.innerHTML += `
+                    <div class="mt-3">
+                        <span class="text-sky-400">[React.js State]</span> captured form inputs:<br>
+                        <span class="text-slate-500">const [formData] = useState({<br>
+                        &nbsp;&nbsp;name: "${name}",<br>
+                        &nbsp;&nbsp;email: "${email}",<br>
+                        &nbsp;&nbsp;proposal: "${message.substring(0, 40)}..."<br>
+                        });</span>
+                    </div>
+                `;
+                consoleLogs.scrollTop = consoleLogs.scrollHeight;
+            }, 600);
+
+            setTimeout(() => {
+                // Step B: Express API
+                consoleLogs.innerHTML += `
+                    <div class="mt-3">
+                        <span class="text-yellow-400">[Express.js REST API]</span> Received request on route handler:<br>
+                        <span class="text-slate-400">POST /api/v1/proposals</span><br>
+                        <span class="text-slate-500">Headers: { "Content-Type": "application/json" }</span>
+                    </div>
+                `;
+                consoleLogs.scrollTop = consoleLogs.scrollHeight;
+            }, 1400);
+
+            setTimeout(() => {
+                // Step C: MongoDB
+                consoleLogs.innerHTML += `
+                    <div class="mt-3">
+                        <span class="text-emerald-400">[MongoDB Engine]</span> Writing proposal record to the data layer:<br>
+                        <span class="text-slate-400">db.proposals.insertOne({ 
+    managerName: "${name}", 
+    managerEmail: "${email}", 
+    message: "${message}", 
+    submittedAt: new Date() 
+});</span>
+                    </div>
+                `;
+                consoleLogs.scrollTop = consoleLogs.scrollHeight;
+            }, 2200);
+
+            setTimeout(() => {
+                // Step D: Clean response
+                consoleLogs.innerHTML += `
+                    <div class="mt-3 text-emerald-500 font-bold">
+                        ✔ 201 Created - Proposal submitted successfully to Yohannes' workspace database!
+                    </div>
+                `;
+                consoleLogs.scrollTop = consoleLogs.scrollHeight;
+                httpCode.innerText = "HTTP Code: 201";
+
+                // Clear input fields
+                document.getElementById('project-form').reset();
+            }, 2800);
+        }
+    </script>
 
 </body>
 </html>

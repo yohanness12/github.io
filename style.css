@@ -1,17 +1,14 @@
-/* Color Palette Variables */
 :root {
     --bg-canvas: #f9fafb;
     --border-divider: #e5e7eb;
     --text-primary: #1f2937;
     --text-secondary: #4b5563;
     
-    /* Vibrant Premium Blue Accents */
     --brand-color: #2563eb;
     --brand-hover: #1d4ed8;
     --brand-light-bg: #eff6ff;
 }
 
-/* Page Defaults */
 .bg-canvas { background-color: var(--bg-canvas); }
 .text-primary { color: var(--text-primary); }
 .text-secondary { color: var(--text-secondary); }
@@ -20,26 +17,12 @@
 .bg-brand { background-color: var(--brand-color); }
 .bg-brand-light { background-color: var(--brand-light-bg); }
 
-/* Buttons and Links */
 .bg-brand-hover:hover { background-color: var(--brand-hover); }
 .hover\:text-brand:hover { color: var(--brand-color); }
 .hover\:border-brand:hover { border-color: var(--brand-color); }
 
-/* Component Cards */
 .bg-card { background-color: #ffffff; }
-.skill-card {
-    background-color: #ffffff;
-    border: 1px solid var(--border-divider);
-    border-radius: 12px;
-    padding: 16px;
-    transition: all 0.2s ease-in-out;
-}
-.skill-card:hover {
-    border-color: var(--brand-color);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-}
 
-/* Badge System */
 .badge {
     font-size: 11px;
     font-weight: 700;
