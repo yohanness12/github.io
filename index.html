@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yohannes | Full-Stack Developer</title>
+    <title>Yohannes Serkalem | Full-Stack Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -31,17 +31,18 @@
 </head>
 <body class="bg-canvas text-primary font-sans min-h-screen flex flex-col justify-between">
 
-    <!-- Header Navigation -->
-    <header class="border-b border-divider bg-white/90 backdrop-blur sticky top-0 z-50 py-4 px-6">
-        <div class="max-w-5xl mx-auto flex justify-between items-center">
-            <span class="text-brand font-bold text-lg tracking-tight">&lt;Yohannes /&gt;</span>
-            <nav class="space-x-6 text-sm font-semibold text-secondary hidden md:flex">
+    <!-- Header Navigation (Fully Responsive Toolbar on Mobile) -->
+    <header class="border-b border-divider bg-white/90 backdrop-blur sticky top-0 z-50 py-3 px-4 md:px-6">
+        <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3">
+            <span class="text-brand font-bold text-lg tracking-tight">&lt;Yohannes Serkalem /&gt;</span>
+            <!-- Responsive Menu: Wraps cleanly on mobile devices so no links disappear -->
+            <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs md:text-sm font-semibold text-secondary">
                 <a href="#about" class="hover:text-brand transition">About</a>
                 <a href="#resume" class="hover:text-brand transition">Resume</a>
                 <a href="#projects" class="hover:text-brand transition">Projects</a>
                 <a href="#certificates" class="hover:text-brand transition">Certificates</a>
                 <a href="#skills" class="hover:text-brand transition">Skills</a>
-                <a href="#sandbox" class="hover:text-brand transition">Interactive Sandbox</a>
+                <a href="#sandbox" class="hover:text-brand transition">Sandbox</a>
                 <a href="#contact" class="hover:text-brand transition">Contact</a>
             </nav>
         </div>
@@ -54,7 +55,7 @@
             <div class="md:col-span-2 space-y-5">
                 <span class="text-xs bg-brand-light text-brand px-3 py-1 rounded-full font-bold uppercase tracking-wider">Available for new opportunities</span>
                 <h1 class="text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">
-                    Hi, I'm Yohannes. <br>I build full-stack web applications.
+                    Hi, I'm Yohannes Serkalem. <br>I build full-stack web applications.
                 </h1>
                 <p class="text-secondary text-base md:text-lg leading-relaxed">
                     I am a recent Computer Science graduate and passionate Full-Stack Web Developer dedicated to designing robust backend systems, managing databases, and writing highly responsive user interfaces. I love solving real-world problems through software engineering.
@@ -73,7 +74,7 @@
             <div class="md:col-span-1 flex justify-center">
                 <div class="relative group">
                     <div class="absolute -inset-1.5 bg-brand rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
-                    <img src="https://lh3.googleusercontent.com/d/1gg2hhGC-VYSgfre5v46f8ICgPMrQZL9j" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=300&h=300&q=80'" alt="Yohannes Profile" class="relative w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-white shadow-md">
+                    <img src="https://lh3.googleusercontent.com/d/1gg2hhGC-VYSgfre5v46f8ICgPMrQZL9j" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=300&h=300&q=80'" alt="Yohannes Serkalem" class="relative w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-white shadow-md">
                 </div>
             </div>
         </section>
@@ -370,7 +371,7 @@
                     </div>
 
                     <!-- Action points to custom local backend or relative API path -->
-                    <form action="https://formspree.io/f/mjgngbny" method="POST" id="project-form" onsubmit="submitProjectProposal(event)" class="p-6 pt-4 space-y-4">
+                    <form action="/api/contact" method="POST" id="project-form" onsubmit="submitProjectProposal(event)" class="p-6 pt-4 space-y-4">
                         <!-- Input: Name -->
                         <div>
                             <label class="block text-xs font-semibold text-slate-700 mb-1">Full Name</label>
@@ -455,15 +456,15 @@
                 <!-- Info block -->
                 <div class="space-y-4">
                     <h3 class="font-bold text-base text-slate-900">Contact Details</h3>
-                    <p class="text-secondary text-sm">I'm currently based in Hawassa, Ethiopia, working with global clients remotely.</p>
+                    <p class="text-secondary text-sm">I'm currently based in Addis Ababa, Ethiopia, working with global clients remotely.</p>
                     <div class="space-y-2 text-sm text-slate-700">
                         <div class="flex items-center gap-3">
                             <i class="fa-solid fa-envelope text-brand w-5 text-center"></i>
-                            <a href="mailto:yohannes.daniel@example.com" class="hover:text-brand transition">yohannes.daniel@example.com</a>
+                            <a href="mailto:yohannesserkalem12@gmail.com" class="hover:text-brand transition">yohannesserkalem12@gmail.com</a>
                         </div>
                         <div class="flex items-center gap-3">
                             <i class="fa-solid fa-location-dot text-brand w-5 text-center"></i>
-                            <span>Hawassa, Ethiopia</span>
+                            <span>Addis Ababa, Ethiopia</span>
                         </div>
                     </div>
                 </div>
@@ -476,7 +477,7 @@
                         <a href="https://github.com" target="_blank" class="w-12 h-12 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200 flex items-center justify-center text-xl transition-all shadow-sm">
                             <i class="fa-brands fa-github"></i>
                         </a>
-                        <a href="https://linkedin.com" target="_blank" class="w-12 h-12 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200 flex items-center justify-center text-xl transition-all shadow-sm">
+                        <a href="https://www.linkedin.com/feed/" target="_blank" class="w-12 h-12 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200 flex items-center justify-center text-xl transition-all shadow-sm">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
                         <a href="https://telegram.org" target="_blank" class="w-12 h-12 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200 flex items-center justify-center text-xl transition-all shadow-sm">
@@ -489,11 +490,58 @@
 
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-8 px-6 border-t border-slate-800">
-        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
-            <p>&copy; 2026 Yohannes. All rights reserved.</p>
-            <p class="text-slate-500">Built using Tailwind CSS & HTML5</p>
+    <!-- Footer with Explicit Built-With Details -->
+    <footer class="bg-slate-900 text-slate-400 py-10 px-6 border-t border-slate-800">
+        <div class="max-w-5xl mx-auto space-y-6">
+            <!-- Stack Breakdown -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 pb-6 border-b border-slate-800 text-xs">
+                <div>
+                    <h4 class="text-slate-200 font-bold mb-2 uppercase tracking-wider text-[10px]">Structure & Style</h4>
+                    <p class="text-slate-500 leading-relaxed">
+                        Built with semantic <strong class="text-slate-300">HTML5</strong> and styled dynamically using the utility-first <strong class="text-slate-300">CSS</strong> and <strong class="text-slate-300">Tailwind CSS</strong> framework.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-slate-200 font-bold mb-2 uppercase tracking-wider text-[10px]">Logic & API</h4>
+                    <p class="text-slate-500 leading-relaxed">
+                        Powered by vanilla <strong class="text-slate-300">JavaScript (JS)</strong> and integrated with <strong class="text-slate-300">Node.js</strong> setups to drive terminal logs, form submissions, and UI state loops.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-slate-200 font-bold mb-2 uppercase tracking-wider text-[10px]">Form Infrastructure</h4>
+                    <p class="text-slate-500 leading-relaxed">
+                        Integrated with <strong class="text-slate-300">Formspree</strong> to securely manage, parse, and route client project submissions from the sandbox contact form.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-slate-200 font-bold mb-2 uppercase tracking-wider text-[10px]">Hosting & Control</h4>
+                    <p class="text-slate-500 leading-relaxed">
+                        Managed using version control via <strong class="text-slate-300">GitHub</strong> and hosted globally on high-performance infrastructure by <strong class="text-slate-300">Vercel</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Copyright and Metadata -->
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+                <p>&copy; 2026 Yohannes Serkalem. All rights reserved.</p>
+                <div class="flex flex-wrap justify-center items-center gap-2 text-slate-500">
+                    <span>HTML5</span>
+                    <span class="text-slate-700">•</span>
+                    <span>CSS</span>
+                    <span class="text-slate-700">•</span>
+                    <span>Tailwind CSS</span>
+                    <span class="text-slate-700">•</span>
+                    <span>JS</span>
+                    <span class="text-slate-700">•</span>
+                    <span>Node.js</span>
+                    <span class="text-slate-700">•</span>
+                    <span>Formspree</span>
+                    <span class="text-slate-700">•</span>
+                    <span>Vercel</span>
+                    <span class="text-slate-700">•</span>
+                    <span>GitHub</span>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -542,7 +590,7 @@
             logToConsole(`Payload: ${JSON.stringify(payload)}`);
 
             try {
-                // Point endpoint to your custom backend (e.g., http://localhost:5000/api/contact)
+                // Point endpoint to your custom backend or Formspree URL
                 const response = await fetch(form.action, {
                     method: 'POST',
                     headers: {
